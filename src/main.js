@@ -23,6 +23,15 @@ Vue.directive('theme',{
   }
 })
 
+//filters
+Vue.filter('to-uppercase',function(value){
+  return value.toUpperCase();
+})
+
+Vue.filter('snippet',function(value){
+  return value.slice(0,100)+'..';
+})
+
 //Vue.config.productionTip = false
 
 /* eslint-disable no-new */
